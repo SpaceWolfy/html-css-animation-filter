@@ -177,7 +177,7 @@
 /*  */
 
 /* Animazioni */
-
+/* Es. 10 */
 @keyframes girotondo {
   0% {
     transform: rotate(0deg);
@@ -187,3 +187,26 @@
     transform: rotate(360deg);
   }
 }
+/*  */
+
+/* Es. 11 */
+.ex-11-icon:hover {
+  transform: rotate(0deg);
+  animation-name: girotondo-spaccato;
+  animation-duration: 2s;
+}
+
+@keyframes girotondo-spaccato {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(320deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*  */
