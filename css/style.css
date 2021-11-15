@@ -49,6 +49,11 @@
 
 .ex-10-icon {
   font-size: 60px;
+  transform: rotate(0deg);
+  animation-name: girotondo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
 }
 
 .ex-11-icon {
@@ -168,3 +173,17 @@
   transition: 2s;
 }
 /*  */
+
+/*  */
+
+/* Animazioni */
+
+@keyframes girotondo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
