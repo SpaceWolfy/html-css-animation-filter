@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+/* ----------------------------- */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(173, 19, 50);
+}
+
+.title-text {
+  font-family: "Press Start 2P", cursive;
+  color: yellow;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.title-text > img:last-child {
+  transform: scaleX(-1);
+}
+
+.circuit-container {
+  width: 1250px;
+  height: 800px;
+  background-color: #1bad32;
+  box-shadow: 5px 5px 5px, -5px -5px 5px, 5px -5px 5px, -5px 5px 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.road-car {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------------------------------------------------- */
+
+/* Strada */
+.road {
+  top: 25px;
+  left: 25px;
+  background-color: rgb(201, 168, 125);
+}
+
+.road > div:first-child {
+  width: 490px;
+  height: 45px;
+  background-color: rgb(201, 168, 125);
+}
+.road > div:nth-child(2) {
+  width: 45px;
+  height: 300px;
+  left: 490px;
+  border-top-right-radius: 30px;
+  background-color: rgb(201, 168, 125);
+}
+
+.road > div:nth-child(3) {
+  width: 350px;
+  height: 45px;
+  top: 300px;
+  left: 185px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(201, 168, 125);
+}
+
+.road > div:nth-child(4) {
+  width: 45px;
+  height: 400px;
+  top: 300px;
+  left: 170px;
+  border-top-left-radius: 20px;
+  background-color: rgb(201, 168, 125);
+}
+
+.road > div:nth-child(5) {
+  width: calc(100% - 220px);
+  height: 45px;
+  top: 700px;
+  left: 170px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(201, 168, 125);
+}
+
+.road > div:nth-child(6) {
+  width: 20px;
+  height: 45px;
+  top: 640px;
+  left: calc(100% - 100px);
+}
+/*  */
+
+/* Auto */
+.car {
+  width: 70px;
+  height: 30px;
+  border-left: 2px solid rgb(255, 255, 0);
+  top: 31px;
+  left: 28px;
+  animation: car-movement 15s linear;
+}
+
+.car-container {
+  height: 100%;
+  width: 100%;
+  padding-left: 4px;
+}
+.car-container div:first-child {
+  border: 1px solid black;
+  width: 12px;
+  height: 6px;
+  background-color: black;
+  border-radius: 20px;
+  bottom: 0;
+  right: 0;
+}
+
+.car-container div:nth-child(2) {
+  border: 1px solid black;
+  width: 12px;
+  height: 6px;
+  background-color: black;
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+}
+
+.car-container div:nth-child(3) {
+  border: 1px solid black;
+  width: 12px;
+  height: 7px;
+  background-color: black;
+  border-radius: 20px;
+  top: 0;
+  left: 1px;
+}
+
+.car-container div:nth-child(4) {
+  border: 1px solid black;
+  width: 12px;
+  height: 7px;
+  background-color: black;
+  border-radius: 20px;
+  bottom: 0;
+  left: 1px;
+}
+
+.car-container div:nth-child(5) {
+  border: 1px solid black;
+  width: 3px;
+  height: 20px;
+  background-color: crimson;
+  top: calc(100% - 25px);
+  right: 6px;
+}
+
+.car-container div:nth-child(6) {
+  border: 1px solid black;
+  width: 58px;
+  height: 3px;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.car-container div:nth-child(7) {
+  border: 1px solid black;
+  width: 3px;
+  height: 19px;
+  background-color: red;
+  top: calc(100% - 23.5px);
+  left: 5px;
+}
+
+.car-container div:nth-child(8) {
+  border: 1px solid black;
+  width: 65px;
+  height: 13px;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1;
+}
+
+.car-container div:nth-child(9) {
+  border: 1px solid black;
+  width: 30px;
+  height: 23px;
+  background-color: crimson;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/*  */
+
+/* Alettone */
+.car-container div:nth-child(10) {
+  border: 1px solid black;
+  width: 8px;
+  height: 3px;
+  background-color: crimson;
+  top: 15px;
+  left: 0px;
+}
+
+.car-container div:nth-child(10) {
+  border: 1px solid black;
+  width: 8px;
+  height: 3px;
+  background-color: black;
+  top: 15px;
+  left: 0px;
+}
+
+.car-container div:nth-child(11) {
+  border: 1px solid black;
+  width: 8px;
+  height: 3px;
+  background-color: black;
+  bottom: 15px;
+  left: 0px;
+}
+/*  */
+
+/* Animazione */
+@keyframes car-movement {
+  0% {
+    top: 31px;
+    left: 28px;
+    transform: rotate(0deg);
+  }
+
+  10% {
+    top: 31px;
+    left: calc(100% - 810px);
+    transform: rotate(0deg);
+  }
+
+  20% {
+    top: 31px;
+    left: calc(100% - 745px);
+    transform: rotate(90deg);
+  }
+
+  30% {
+    top: 310px;
+    left: calc(100% - 745px);
+    transform: rotate(90deg);
+  }
+
+  40% {
+    top: 335px;
+    left: calc(100% - 745px);
+    transform: rotate(180deg);
+  }
+
+  50% {
+    top: 335px;
+    left: calc(100% - 1065px);
+    transform: rotate(180deg);
+  }
+
+  60% {
+    top: 335px;
+    left: calc(100% - 1065px);
+    transform: rotate(90deg);
+  }
+
+  70% {
+    top: 735px;
+    left: calc(100% - 1065px);
+    transform: rotate(90deg);
+  }
+
+  80% {
+    top: 735px;
+    left: calc(100% - 1065px);
+    transform: rotate(0deg);
+  }
+
+  90% {
+    top: 735px;
+    left: calc(100% - 100px);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 31px;
+    left: 28px;
+    transform: rotate(0deg);
+  }
+}
