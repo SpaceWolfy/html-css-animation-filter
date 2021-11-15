@@ -38,6 +38,7 @@
 .ex-7-img,
 .ex-8-img {
   width: 500px;
+  transition: 1s;
 }
 
 .ex-9-img {
@@ -135,3 +136,16 @@
   transition: 2s;
 }
 /*  */
+
+/* Es. 6 */
+.ex-6-img:hover {
+  filter: grayscale(1);
+  transition: 1s;
+}
+/*  */
+
+/* Es. 7 */
+.ex-7-img:hover {
+  filter: sepia(0.5) grayscale(0.2);
+  transition: 1s;
+}
