@@ -50,10 +50,7 @@
 .ex-10-icon {
   font-size: 60px;
   transform: rotate(0deg);
-  animation-name: girotondo;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation: girotondo 1s linear infinite reverse;
 }
 
 .ex-11-icon {
@@ -192,8 +189,7 @@
 /* Es. 11 */
 .ex-11-icon:hover {
   transform: rotate(0deg);
-  animation-name: girotondo-spaccato;
-  animation-duration: 2s;
+  animation: girotondo-spaccato 2s;
 }
 
 @keyframes girotondo-spaccato {
@@ -214,8 +210,7 @@
 /* Es. 12 */
 /* Parte 1 */
 .ex-12-button:hover .ex-12-top-white {
-  animation-name: camminata;
-  animation-duration: 4s;
+  animation: camminata 4s linear;
 }
 
 @keyframes camminata {
@@ -238,8 +233,7 @@
 
 /* Parte 2 */
 .ex-12-button:hover .ex-12-bottom-white {
-  animation-name: camminata-invertita;
-  animation-duration: 4s;
+  animation: camminata-invertita 4s linear;
 }
 
 @keyframes camminata-invertita {
@@ -259,6 +253,69 @@
   }
 }
 /*  */
+
+/* Es 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation: camminata-infinita 6s linear infinite;
+}
+
+/* Parte 1 */
+@keyframes camminata-infinita {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  25% {
+    top: -10px;
+    left: calc(100% - 30px);
+  }
+
+  50% {
+    top: 60px;
+    left: calc(100% - 30px);
+  }
+
+  75% {
+    top: 60px;
+    left: -10%;
+  }
+
+  95% {
+    top: -10px;
+    left: -10%;
+  }
+}
 /*  */
 
-/* Es. 13 */
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: camminata-infinita-parte2 6s linear infinite;
+}
+/* Parte 2 */
+@keyframes camminata-infinita-parte2 {
+  0% {
+    bottom: -10px;
+    right: 10%;
+  }
+
+  25% {
+    bottom: -10px;
+    right: calc(100% - 40px);
+  }
+
+  50% {
+    bottom: 60px;
+    right: calc(100% - 40px);
+  }
+
+  75% {
+    bottom: 60px;
+    right: -20%;
+  }
+
+  95% {
+    bottom: -10px;
+    right: -20%;
+  }
+}
+/*  */
