@@ -126,16 +126,18 @@
 
 /* Es. 5 */
 .ex-5-square:hover {
-  margin: 5px;
+  /* margin: 5px;
   width: 110px;
-  height: 110px;
+  height: 110px; */
+  transform: scale(2);
   transition: 2s;
 }
 
 .ex-5-square:active {
-  margin: 5px;
+  /* margin: 5px;
   width: 40px;
-  height: 40px;
+  height: 40px; */
+  transform: scale(0.5);
   transition: 2s;
 }
 /*  */
@@ -166,7 +168,7 @@
 .ex-9-img:hover {
   filter: sepia(0.8) grayscale(0.2);
   border-radius: 30px;
-  width: 600px;
+  transform: scale(1.5);
   transition: 2s;
 }
 /*  */
